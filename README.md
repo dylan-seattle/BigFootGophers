@@ -56,4 +56,4 @@ Challenge 14: Write an application that nukes everything in you have created fro
 * Delete all DynamoDB
 * Delete all Route53 Records
 * Delete all Volumes.
-* Worth 15 points
+Worth 15 points
