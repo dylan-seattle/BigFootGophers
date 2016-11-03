@@ -36,16 +36,19 @@ Worth 20 Points
 
 Challenge 9: User Packer.io to build an AMI that when passed the arguments image and instance type it creates a new AMI with ssm, scaleft, ansible, awscli, and GO path. Worth 10 Points
 
+Challeng 10: Write a GO script to parse the packer json template , validate , and pass it to CodeCommit . Worth 10 points
+
 
 ##API Challenge Group D - Messaging 
 
-Challenge 10: Write an application that will create a SQS queue and send it a message. Worth 3 points
-Challenge 11: Write an application that prints hello world if the SQS queue has a message. Worth 5 points
+Challenge 11: Write an application that will create a SQS queue and send it a message. Worth 3 points
+
+Challenge 12: Write an application that prints hello world if the SQS queue has a message. Worth 5 points
 
 
 ##API Challenge Group E - Cleaning up
-Challenge 12: Write a script that tags the EC2 instances with the date, creater, and a delete on date 1 week from the instance creation time . Worth 10 points 
-Challenge 13: Write an application that nukes everything in you have created from these exercises. It should:
+Challenge 13: Write a script that tags the EC2 instances with the date, creater, and a delete on date 1 week from the instance creation time . Worth 10 points 
+Challenge 14: Write an application that nukes everything in you have created from these exercises. It should:
 Delete all EC2 instances
 Delete all Custom Amazon Images
 Delete all S3 Buckets
