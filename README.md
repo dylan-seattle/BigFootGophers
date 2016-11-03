@@ -2,8 +2,8 @@
 API Challenge for AWS and GO
 
 #API Challenges
-===============
-API Challenge Challenge Group A
+
+##API Challenge Challenge Group A - Basics
 
 Challenge 1: Write a script that builds three 512 MB EC2 Instances that following a similar naming convention. (ie., web1, web2, web3) and returns the IP of each instance. Use any image you want. Worth 3 Points
 
@@ -15,47 +15,38 @@ Challenge 4: Write a script that uses Route 53 to create a new A record when pas
 
 Challenge 5: Write a script that creates a new DynamoDB database. Should contain at least one database, and the database should have at least one user that can connect to it. Worth 5 Points
 
-##API Challenge Group B
-=====================
+##API Challenge Group B - Advanced Scripting
 
 Challenge 6: Write a script that creates a public S3 website bucket. Must have a index file, error file, and return the status code of a curl test. Worth 10 Points
 
 Challenge 7: Write a script that will create 2 EC2 instances and add them as nodes to a new Elastic Load Balancer. Worth 5 Points
 
+Challenge 8: Write an application that will:
+Create a new Autoscaling Group. Supplying a ssh key to be installed at /root/.ssh/authorized_keys, an AMI from Challenge 2 , installs ssm, and CodeDeploy.
+Create a Elastic Load Balancer
+Add the new ASG to the ELB
+Set up ELB monitor and custom error page.
+Create a Route53 DNS record based on a FQDN for the ELB
+Write the error page html to a file in S3 for backup failover. Worth 20 Points
 
 ##API Challenge Group C - Tools
 
-Challenge 8: Write an application that when passed the arguments FQDN, image, and flavor it creates a server of the specified image and flavor with the same name as the fqdn, and creates a DNS entry for the fqdn pointing to the server's public IP. Worth 2 Points
+Challenge 8: User Packer.io to build an AMI that when passed the arguments image and instance type it creates a new AMI with ssm, scaleft, ansible, awscli, and GO path. Worth 10 Points
 
-Challenge 9: Write an application that will:
 
-Create 2 servers, supplying a ssh key to be installed at /root/.ssh/authorized_keys.
-Create a load balancer
-Add the 2 new servers to the LB
-Set up LB monitor and custom error page.
-Create a DNS record based on a FQDN for the LB VIP.
-Write the error page html to a file in cloud files for backup.
-API Challenge Week 4
+##API Challenge Group D - Messaging 
 
-Challenge 10: Write an application that will:
-Create an SSL terminated load balancer (Create self-signed certificate.)
-Create a DNS record that should be pointed to the load balancer.
-Create Three servers as nodes behind the LB.
-Each server should have a CBS volume attached to it. (Size and type are irrelevant.)
-All three servers should have a private Cloud Network shared between them.
-Login information to all three servers returned in a readable format as the result of the script, including connection information.
-API Challenge Week 5
+Challenge 11: Write an application that will create a SQS queue and send it a message. Worth 3 points
+Challenge 12: Write an application that prints hello world if the SQS queue has a message. Worth 5 points
 
-Challenge 11: Write an application that will
-Create a route in mailgun so that when an email is sent to @apichallenges.mailgun.org it calls your Challenge 1 script that builds 3 servers.
-Assumptions:
-Assume that challenge 1 can be kicked off by accessing http://cldsrvr.com/challenge1
-API Challenge Week 6
 
-Challenge 12: Write an application that nukes everything in your Cloud Account. It should:
-Delete all Cloud Servers
-Delete all Custom Images
-Delete all Cloud Files Containers and Objects
-Delete all Databases
-Delete all Networks
-Delete all CBS Volumes
+##API Challenge Group E - Cleaning up
+Challenge 14: Write a script that tags the EC2 instances with the date, creater, and a delete on date 1 week from the instance creation time . Worth 10 points 
+Challenge 13: Write an application that nukes everything in you have created from these exercises. It should:
+Delete all EC2 instances
+Delete all Custom Amazon Images
+Delete all S3 Buckets
+Delete all DynamoDB
+Delete all Route53 Records
+Delete all Volumes.
+Worth 15 points
