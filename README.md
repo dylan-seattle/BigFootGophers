@@ -25,26 +25,26 @@ Challenge 6: Write a script that creates a public S3 website bucket. Must have t
 Challenge 7: Write a script that will create 2 EC2 instances and add them as nodes to a new Elastic Load Balancer. Worth 5 Points
 
 Challenge 8: Write an application that will:
-Create a new Autoscaling Group. Supplying a ssh key to be installed at /root/.ssh/authorized_keys, an AMI from Challenge 2 , installs ssm, and CodeDeploy.
-Create a Elastic Load Balancer
-Add the new ASG to the ELB
-Set up ELB monitor and custom error page.
-Create a Route53 DNS record based on a FQDN for the ELB
-Write the error page html to a file in S3 for backup failover. Worth 20 Points
+Create a new Autoscaling Group. Create a Elastic Load Balancer . Add the new ASG to the ELB .Set up ELB monitor and custom error page. Create a Route53 DNS record based on a FQDN for the ELB . Write the error page html to a file in S3 for backup failover. The Launchconfig for the ASG needs the following :   
+* a valid Key Pair
+* an AMI from Challenge 2 
+* installs ssm
+* installs CodeDeploy agent 
+Worth 20 Points
 
 ##API Challenge Group C - Tools
 
-Challenge 8: User Packer.io to build an AMI that when passed the arguments image and instance type it creates a new AMI with ssm, scaleft, ansible, awscli, and GO path. Worth 10 Points
+Challenge 9: User Packer.io to build an AMI that when passed the arguments image and instance type it creates a new AMI with ssm, scaleft, ansible, awscli, and GO path. Worth 10 Points
 
 
 ##API Challenge Group D - Messaging 
 
-Challenge 11: Write an application that will create a SQS queue and send it a message. Worth 3 points
-Challenge 12: Write an application that prints hello world if the SQS queue has a message. Worth 5 points
+Challenge 10: Write an application that will create a SQS queue and send it a message. Worth 3 points
+Challenge 11: Write an application that prints hello world if the SQS queue has a message. Worth 5 points
 
 
 ##API Challenge Group E - Cleaning up
-Challenge 14: Write a script that tags the EC2 instances with the date, creater, and a delete on date 1 week from the instance creation time . Worth 10 points 
+Challenge 12: Write a script that tags the EC2 instances with the date, creater, and a delete on date 1 week from the instance creation time . Worth 10 points 
 Challenge 13: Write an application that nukes everything in you have created from these exercises. It should:
 Delete all EC2 instances
 Delete all Custom Amazon Images
