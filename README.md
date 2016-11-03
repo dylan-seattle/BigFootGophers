@@ -41,7 +41,7 @@ Challeng 10 (10 Points) : Write a GO script to parse the packer json template , 
 
 ##API Challenge Group D - Messaging 
 
-Challenge 11(1 Point) : Write an application that will create a SQS queue and send it a message. 
+Challenge 11 (1 Point) : Write an application that will create a SQS queue and send it a message. 
 
 Challenge 12 (5 Points) : Write an application that prints hello world if the SQS queue has a message. 
 
