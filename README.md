@@ -17,7 +17,10 @@ Challenge 5: Write a script that creates a new DynamoDB database. Should contain
 
 ##API Challenge Group B - Advanced Scripting
 
-Challenge 6: Write a script that creates a public S3 website bucket. Must have a index file, error file, and return the status code of a curl test. Worth 10 Points
+Challenge 6: Write a script that creates a public S3 website bucket. Must have the following: 
+ * index file
+ * error file 
+ * return the status code of a curl test. Worth 10 Points
 
 Challenge 7: Write a script that will create 2 EC2 instances and add them as nodes to a new Elastic Load Balancer. Worth 5 Points
 
