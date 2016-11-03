@@ -48,11 +48,12 @@ Challenge 12: Write an application that prints hello world if the SQS queue has 
 
 ##API Challenge Group E - Cleaning up
 Challenge 13: Write a script that tags the EC2 instances with the date, creater, and a delete on date 1 week from the instance creation time . Worth 10 points 
+
 Challenge 14: Write an application that nukes everything in you have created from these exercises. It should:
-Delete all EC2 instances
-Delete all Custom Amazon Images
-Delete all S3 Buckets
-Delete all DynamoDB
-Delete all Route53 Records
-Delete all Volumes.
-Worth 15 points
+* Delete all EC2 instances
+* Delete all Custom Amazon Images
+* Delete all S3 Buckets
+* Delete all DynamoDB
+* Delete all Route53 Records
+* Delete all Volumes.
+* Worth 15 points
