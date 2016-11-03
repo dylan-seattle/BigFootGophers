@@ -5,7 +5,7 @@ API Challenge for AWS and GO
 
 ##API Challenge Challenge Group A - Basics
 
-Challenge 1 (1 Point) : Write a script that builds three 512 MB EC2 Instances that following a similar naming convention. (ie., web1, web2, web3) and returns the IP of each instance. Use any image you want. 
+Challenge 1 (5 Points) : Write a script that builds three 512 MB EC2 Instances that following a similar naming convention. (ie., web1, web2, web3) and returns the IP of each instance. Use any image you want. 
 
 Challenge 2 (10 Points) : Write a script that snapshots a volume and creates an AMI  (takes an image and deploys the image as a new server with automation). 
 
